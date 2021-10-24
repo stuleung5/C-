@@ -1,0 +1,3 @@
+text = input()
+
+print((len(text)-int(text.count(" ")))/(int(text.count(" "))+1))
