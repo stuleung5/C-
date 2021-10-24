@@ -1,26 +1,19 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int main() {
     int ages[5];
     int i;
-    int min;
-
-    for (i = 0; i < 5;++i)
-     {
-        cin >> ages[i];
-    }
-   min=ages[0];
-    for (i=0;i<5;i++)
-    {
-    if (min>ages[i])
-    {
-    min=ages[i];
+    int minimum;
+    for (i; i<5; ++i) {
+        cin<<ages[i]<<endl;
+    }  
     
-    }
-    }
-    cout<<50-(min*0.5)<<endl;
-    
-    
-    return 0;
+    minimum=age[0];
+    for (i; i<5; i++) {
+        if (minimum>age[i]) {
+            minimum=age[i];
+            }
+     }
+     cout<<50-float(0.5*minimum)<<endl;
+     return 0;
 }
