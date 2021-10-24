@@ -1,0 +1,7 @@
+def spell(txt):
+    #your code goes here
+    for i in range(1,len(txt)+1):
+    	if i<=(len(txt)+1):
+    		print(txt[len(txt)-i])
+txt = input()
+spell(txt)
