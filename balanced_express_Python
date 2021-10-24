@@ -1,0 +1,15 @@
+def balanced(expression):
+	lst=[]
+	for i in expression:
+		if i=='(':
+			lst.append(i)
+		elif i == ')':
+			if '(' in lst:
+				lst.pop(0)
+			else:
+				return False
+	if len(lst)==0:
+		return True
+	else:
+		return False
+print(balanced(input()))
