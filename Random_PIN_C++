@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+    srand(time(0));
+    int range;
+    cin >> range;
+    //your code goes here
+    for(int x=0;x<4;x++) {
+    	cout<<rand()%range;
+    }
+    
+    return 0;
+}
