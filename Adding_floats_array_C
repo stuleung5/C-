@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	float purchases[3] = {14.99, 18.25, 13.50};
+	float total = 0;
+	int i;
+
+	
+	for (i = 0; i < 3; i++) {
+		total += purchases[i];
+	}
+   
+	printf("Purchases total is %6.2f\n", total);
+	return 0;
+}
