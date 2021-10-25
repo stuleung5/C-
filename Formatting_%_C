@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+	printf("Color: %s, Number: %d, float: %5.2f \n", "red", 42, 3.14159);
+	printf("Pi = %5.1f \n", 3.14159);
+	printf("Pi = %2.2f \n", 3.14159);
+	printf("Pi = %2.5f \n", 3.14159);
+	printf("There are %d %s in the tree. \n", 22, "apples");
+}
