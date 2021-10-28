@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+class Bird {
+    //complete the class, add makeSound() method
+    public: 
+    	void makeSound() {
+    		cout<<"chirp-chirp"<<endl;
+
+		}
+		void haveColor() {
+			cout<<"Blue"<<endl;
+		}
+		void haveName(string x) {
+			name = x;
+		}
+		string getName() {
+			return name;
+		}
+		private: 
+    		string name;
+};
+
+
+
+int main() {
+    
+    //instantiation
+    Bird test;
+    
+    //function call
+    test.makeSound();
+    test.haveColor();
+    Bird myObj;
+	 myObj.setName("John");
+	 cout << myObj.getName();
+    
+    return 0;
+}
