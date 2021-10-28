@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 int Speed=100;
+int x=0;
+int y=0;
 class Car {
     //complete the class, add makeSound() method
     public: 
@@ -19,10 +21,12 @@ class Car {
 			return name;
 		}
        void use() {
-            Speed -=10;
-        }
-       void getSpeed() {
-            cout << Speed<<" mph"<<endl;
+          Speed-=50;
+            }
+       void getSpeed() { 
+       	for (x; x<10; x++) {
+          	cout << Speed-x*8<<" mph"<<endl;
+          }
         }
 		private: 
     		string name;
