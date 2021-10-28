@@ -1,0 +1,21 @@
+const int dark = 600; //setting up constant values for parameter
+const int sound = 50; //setting a constant noise when activated
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(2, OUTPUT); //last stop before the negative end of battery
+  pinMode(A2, INPUT); //starting place for battery
+  Serial.begin(9600); //speed of sound. In this case, very fast.
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int light = analogRead(A2); //The jumper wire connects to the photoresistor. The photoresistor's resistance is based on the amount of photons(light) being directed.
+  if (light<dark) { //Dark is 200, so light must be over 200 Htz in order to activate. 
+    tone(0, sound, 0); //no sound
+  }
+  else {
+    Serial.println("It's light");
+    tone(2, sound, 10); //sound. I can play around with the sound. Thinking of maybe doing other types of sensors if possible as freshman.  
+  }
+  delay(100); //A continuous sound may not be good for a sensor. A rhythm would be ideal. 
+} 
