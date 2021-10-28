@@ -1,13 +1,12 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-
-class Bird {
+int Speed=100;
+class Car {
     //complete the class, add makeSound() method
     public: 
     	void makeSound() {
-    		cout<<"chirp-chirp"<<endl;
+    		cout<<"vroom"<<endl;
 
 		}
 		void haveColor() {
@@ -19,6 +18,12 @@ class Bird {
 		string getName() {
 			return name;
 		}
+       void use() {
+            Speed -=10;
+        }
+       void getSpeed() {
+            cout << Speed<<" mph"<<endl;
+        }
 		private: 
     		string name;
 };
@@ -28,14 +33,18 @@ class Bird {
 int main() {
     
     //instantiation
-    Bird test;
+    Car test;
     
     //function call
     test.makeSound();
     test.haveColor();
-    Bird myObj;
-	 myObj.setName("John");
-	 cout << myObj.getName();
+    Car myObj;
+	 myObj.haveName("Honda");
+	 cout << myObj.getName()<<endl;
+	 Car p;
+    p.use();
+    Car *ptr = &p;
+    ptr->getSpeed();
     
     return 0;
 }
