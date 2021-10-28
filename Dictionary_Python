@@ -1,0 +1,16 @@
+text=input()
+car = {
+    'brand':'BMW',
+    'year': 2018,
+    'color': 'red',
+    'mileage': 15000
+}
+if text=='brand':
+	print('BMW')
+elif text=='year':
+	print(2018)
+elif text == 'color':
+	print('red')
+else:
+	print(15000)
+	
