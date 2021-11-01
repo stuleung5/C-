@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Program
+{
+	public static void main(String[] args) {
+		int x=0;
+		Scanner scanner = new Scanner(System.in);
+		String text = scanner.nextLine();
+		char[] arr = text.toCharArray();
+		
+		//your code goes here
+		for (x=0; x<arr.length; x++) {
+			System.out.println(arr[arr.length-1-x]);
+	}
+	}
+}
